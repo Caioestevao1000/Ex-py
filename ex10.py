@@ -1,10 +1,8 @@
-print("## Quantidade de Salário Recebidos ##")
+print("## Área de um Losango ##")
 
-salariomin = float(input("Digite o Salário Mínimo:"))
-salario = float(input("Digite o seu Salário:"))
+n1 = float(input("Digite o valor da diagonal maior do losango:"))
+n2 = float(input("Digite o valor da diagonal menor do losango:"))
 
-qntsalario = salario / salariomin
-
-print("\nVocê ganha:",qntsalario,"salário mínimos")
+print("\nÁrea é igual:", n1*n2/2,"")
 
 input("\nPressione Enter para sair...")

@@ -1,19 +1,13 @@
-print("## Cálculo de Horas Trabalhadas ##")
+print("## Cálculo da idade ##")
 
-ht = float(input("Digite o número de horas trabalhadas:"))
-het = float(input("Digite o número de horas extras:"))
-salariomin = float(input("Digite o Salário Mínimo:"))
+idade = int(input("Digite seu ano de nascimento:"))
+ano_atual = int(input("Digite o ano atual:"))
 
-valor_hora_trabalhada = salariomin / 8
+ano = ano_atual - idade
 
-valor_hora_extra = salariomin / 4
-
-salario_bruto = ht * valor_hora_trabalhada
-
-qta_receber = valor_hora_extra * het
-
-salario_total = salario_bruto + qta_receber
-
-print("\nVocê receberá:",salario_total)
+print("\nSua idade é igual", ano)
+print("\nSua idade em meses é igual:", ano * 12)
+print("\nSua idade em dias é igual:", ano * 365, "considerado que todo os anos tem 365 dias")
+print("\nSua idade em semans é igual:", ano * 52.18)
 
 input("\nPressione Enter para sair...")

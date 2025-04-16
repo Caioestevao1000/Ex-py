@@ -1,8 +1,7 @@
-print("## Área de um Losango ##")
+print("## Área de um Quadrado Perfeito ##")
 
-n1 = float(input("Digite o valor da diagonal maior do losango:"))
-n2 = float(input("Digite o valor da diagonal menor do losango:"))
+n1 = float(input("Digite o valor do lado do quadrado:"))
 
-print("\nÁrea é igual:", n1*n2/2,"")
+print("\nÁrea é igual:", n1*n1)
 
 input("\nPressione Enter para sair...")
