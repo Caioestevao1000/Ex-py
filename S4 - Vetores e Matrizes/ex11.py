@@ -18,7 +18,7 @@ for i in range(3):
 
 for i in range(len(matriz)):
     for j in range(len(matriz[i])):
-        print(f'{matriz[i][j]:3}', end= '')
+        print(f'{matriz[i][j]:4}', end= '')
     print()
 
 print(f'A Quantidade de Números Entre 15 e 20 é:{num}')
