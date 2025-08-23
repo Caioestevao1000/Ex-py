@@ -1,0 +1,125 @@
+Dicionários
+Lista de Exercícios I
+
+1) Crie um dicionário que contenha algumas palavras em português como
+chaves e suas respectivas traduções em inglês como valores. O programa
+deve solicitar ao usuário que digite uma palavra em português e exibir sua
+tradução em inglês. Se a palavra não estiver no dicionário, deve ser exibida a
+mensagem "Não encontrada".
+Exemplos de execução:
+Entrada: gato → Saída: cat
+Entrada: casa → Saída: house
+Entrada: livro → Saída: Não encontrada
+
+2) O programa deve permitir que o usuário cadastre nomes e números de
+telefone em um dicionário, onde os nomes são as chaves e os números são
+os valores. Após o cadastro, o programa deve solicitar que o usuário digite o
+nome de um contato e exibir o número de telefone correspondente. Caso o
+contato não esteja no dicionário, exiba a mensagem "Contato não
+encontrado".
+Exemplo de execução:
+Entrada (cadastro):
+Nome: Maria → Telefone: 7777-3333
+Nome: João → Telefone: 8888-2222
+Entrada (consulta): Maria
+Saída: 7777-3333
+Outro exemplo:
+Entrada (cadastro):
+Nome: Maria → Telefone: 7777-3333
+Nome: João → Telefone: 8888-2222
+Entrada (consulta): Pedro
+Saída: Contato não encontrado
+
+3) O programa deve criar um dicionário chamado funcionario a partir dos
+dados digitados pelo usuário. O usuário deve informar o nome, o cargo e o
+salário inicial do funcionário. Após exibir o dicionário com os dados
+cadastrados, o programa deve perguntar se o usuário deseja atualizar o
+salário. Caso a resposta seja sim, deve solicitar o novo salário e atualizar o
+valor correspondente no dicionário. Caso a resposta seja não, o salário deve
+permanecer inalterado.
+Exemplo de execução 1 (com atualização):
+Entrada:
+Nome: Ana
+Cargo: Gerente
+Salário inicial: 7000
+Deseja atualizar o salário? s
+Novo salário: 7500
+Saída: {'nome': 'Ana', 'cargo': 'Gerente', 'salario': 7500}
+Exemplo de execução 2 (sem atualização):
+Entrada:
+Nome: João
+Cargo: Técnico
+Salário inicial: 3000
+Deseja atualizar o salário? n
+Saída: {'nome': 'João', 'cargo': 'Técnico', 'salario': 3000}
+
+4) Crie um dicionário que relacione países e suas capitais. O programa deve
+solicitar ao usuário o nome de um país e verificar se ele está presente no
+dicionário. Se estiver, exiba a capital correspondente. Caso contrário, exiba
+"País não encontrado".
+Exemplos de execução:
+Entrada: Brasil → Saída: A capital de Brasil é Brasília
+Entrada: França → Saída: A capital de França é Paris
+Entrada: Argentina → Saída: País não encontrado
+
+5) Crie um dicionário contendo letras como chaves e números inteiros como
+valores. O programa deve calcular e exibir a soma de todos os valores do
+dicionário.
+Exemplo de execução:
+Dicionário: {"a": 5, "b": 7, "c": 3}
+Saída: Soma = 15
+
+6) Crie um dicionário com nomes de produtos como chaves e seus preços como
+valores. O programa deve exibir todos os produtos disponíveis e pedir ao
+usuário que informe qual produto deseja remover. Caso o produto exista, ele
+deve ser retirado do dicionário e o programa deve mostrar o preço
+correspondente e o dicionário atualizado. Caso o produto não exista, deve
+ser exibida a mensagem "Produto não encontrado".
+Exemplo de execução 1 (produto encontrado):
+Dicionário inicial: {'camiseta': 39.9, 'calça': 89.9, 'tênis': 199.9}
+Exibido ao usuário: Produtos disponíveis: camiseta, calça, tênis
+Entrada: calça
+Saída:
+Produto removido: 89.9
+{'camiseta': 39.9, 'tênis': 199.9}
+Exemplo de execução 2 (produto não encontrado):
+Dicionário inicial: {'camiseta': 39.9, 'calça': 89.9, 'tênis': 199.9}
+Exibido ao usuário: Produtos disponíveis: camiseta, calça, tênis
+Entrada: jaqueta
+Saída:
+Produto não encontrado
+{'camiseta': 39.9, 'calça': 89.9, 'tênis': 199.9}
+
+7) O programa deve solicitar ao usuário que digite os pares de chave e valor de
+dois dicionários diferentes. Após a entrada dos dados, o programa deve unir
+os dois dicionários em um único e exibir o resultado.
+Exemplo de execução:
+Entrada:
+Primeiro dicionário → a: 1, b: 2
+Segundo dicionário → c: 3, d: 4
+Saída:
+{'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+8) O programa deve solicitar ao usuário que digite uma palavra. Em seguida,
+deve construir um dicionário mostrando quantas vezes cada letra aparece.
+Exemplo de execução:
+Entrada: banana
+Saída: {'b': 1, 'a': 3, 'n': 2}
+
+9) Crie um dicionário que armazene produtos e suas quantidades em estoque.
+O programa deve solicitar ao usuário o nome de um produto vendido e
+diminuir em 1 a quantidade no estoque. Se o produto não existir, exiba
+"Produto não encontrado".
+Exemplo de execução:
+Estoque inicial: {'arroz': 5, 'feijão': 3, 'macarrão': 7}
+Entrada: feijão
+Saída:
+Venda realizada! Novo estoque: 2
+{'arroz': 5, 'feijão': 2, 'macarrão': 7}
+
+10) Crie um dicionário que armazene nomes de alunos como chaves e suas
+notas como valores. O programa deve percorrer o dicionário e exibir o nome
+do aluno com a maior nota.
+Exemplo de execução:
+Dicionário: {'Ana': 8.5, 'João': 7.2, 'Maria': 9.0}
+Saída: O aluno com a maior nota é Maria (9.0)

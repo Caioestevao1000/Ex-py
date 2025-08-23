@@ -1,0 +1,46 @@
+Fundamentos de Programação
+
+Lista de Exercícios II
+
+Restrição: Para todos os exercícios desta lista, não utilize funções prontas que realizem
+diretamente a tarefa solicitada (como ordenação, filtragem, contagem ou soma). Implemente as
+soluções utilizando apenas laços, estruturas condicionais e operações básicas.
+
+
+1) Crie uma função quantos_maiores(lista, limite) que receba uma lista de
+números e um valor limite, e retorne quantos números da lista são maiores
+que esse limite.
+
+No programa principal, leia 8 números, armazene-os em uma lista, depois
+leia o valor limite, chame a função e exiba o resultado.
+
+2) Crie uma função mover_zeros_fim(lista) que receba uma lista de 12 números
+inteiros e retorne uma nova lista em que todos os zeros sejam movidos para
+o final, preservando a ordem relativa dos demais elementos e mantendo o
+tamanho da lista original.
+No programa principal, leia 12 números inteiros, armazene-os em uma lista,
+chame a função e exiba o resultado.
+
+3) Crie uma função soma_entre(x, y) que receba dois números inteiros (limites)
+e retorne a soma de todos os números entre eles (inclusive).
+No programa principal, leia os dois limites e exiba o resultado.
+
+4) Crie uma função somente_unicos(lista) que receba uma lista de 10 números
+inteiros e retorne uma nova lista contendo apenas os elementos cuja
+frequência seja 1, preservando a ordem de primeira aparição.
+No programa principal, leia 10 números inteiros, armazene-os em uma lista,
+chame a função e exiba a lista resultante.
+
+5) Crie as seguintes funções:
+a. inverter(lista): recebe uma lista de 8 números e retorna uma nova lista
+com os elementos em ordem inversa (sem usar .reverse() nem slicing
+[::-1]).
+b. media(lista): retorna a média dos valores da lista.
+c. contar_acima_da_media(lista, m): recebe uma lista e a média m e
+retorna a quantidade de valores que estão acima da média.
+No programa principal, leia 8 números e armazene-os em uma lista. Em
+seguida, exiba:
+• a lista original;
+• a lista invertida;
+• a média dos valores;
+• a quantidade de valores acima da média.

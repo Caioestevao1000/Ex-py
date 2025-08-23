@@ -1,0 +1,32 @@
+Fundamentos de Programação
+
+Lista de Exercícios I
+
+Restrição: Para todos os exercícios desta lista, não utilize funções prontas que realizem
+diretamente a tarefa solicitada (como ordenação, filtragem, contagem, soma ou inversão de
+listas). Implemente as soluções utilizando apenas laços, estruturas condicionais e operações
+básicas.
+
+1) Leia doze números inteiros e armazene-os em uma lista. Construa e exiba
+uma nova lista em que todos os zeros sejam movidos para o final,
+preservando a ordem relativa dos demais elementos e mantendo o tamanho
+da lista original.
+
+2) Leia dez números inteiros e armazene-os em uma lista. Em seguida, remova
+todos os valores que aparecem mais de uma vez, mantendo apenas os
+elementos cuja frequência seja 1 e preservando a ordem de primeira aparição
+em uma nova lista. Exiba a lista resultante.
+
+3) Leia oito números digitados pelo usuário e armazene-os em uma lista. Ao
+final, exiba a lista original, a lista em ordem inversa, a média dos valores
+digitados e, por último, a quantidade de números que estão acima da média
+calculada.
+
+4) Leia dez números inteiros e armazene-os em uma única lista. Em seguida,
+separe-os em duas novas listas: uma contendo apenas os números pares e
+outra contendo apenas os números ímpares. Ao final, exiba as duas listas
+separadas e a quantidade de elementos que cada uma contém.
+
+5) Leia cinco palavras e armazene-as em uma lista. Para cada palavra digitada,
+exiba a quantidade de vogais que ela contém. Ao final, apresente qual foi a
+palavra da lista com o maior número de vogais.
