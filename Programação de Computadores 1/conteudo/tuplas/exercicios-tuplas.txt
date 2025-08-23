@@ -1,0 +1,49 @@
+Tuplas
+Lista de Exercícios I
+
+
+1) Dada a tupla ponto = (4, 7, 9), imprima:
+- O primeiro elemento.
+- O último elemento usando índice negativo.
+
+2) Crie uma tupla com os números de 1 a 10.
+- Exiba apenas os três primeiros elementos.
+- Exiba apenas os números pares.
+
+3) Dada a tupla data = (15, 8, 2025), desempacote seus valores em três
+variáveis (dia, mes, ano) e exiba no formato: 15/08/2025.
+
+4) Crie uma tupla chamada animais com quatro nomes de animais. Percorra a
+tupla usando range(len(...)) e imprima cada índice e o respectivo
+animal.
+
+5) Usando a mesma tupla animais, percorra e imprima apenas os valores,
+sem usar índice.
+
+6) Usando novamente animais, percorra a tupla com enumerate() e exiba
+na tela o índice e o valor de cada elemento.
+
+7) Crie uma tupla com números inteiros, incluindo repetições. Peça ao usuário
+um número e mostre quantas vezes ele aparece na tupla.
+
+8) Dada a tupla vogais = ('a', 'e', 'i', 'o', 'u'), peça ao usuário
+uma vogal e exiba em qual posição ela está.
+
+9) Crie uma tupla chamada produto contendo as informações nome, preço e
+quantidade. Depois, exiba uma frase no formato:
+O produto <nome> custa R$<preço> e temos <quantidade> unidades em
+estoque.
+
+10) Crie uma função chamada estatisticas que receba uma lista de números
+inteiros e retorne uma tupla contendo:
+- o menor número,
+- o maior número,
+- a média dos números.
+Depois, escreva um programa que:
+1. Leia 5 números digitados pelo usuário,
+2. Chame a função estatisticas,
+3. Desempacote a tupla retornada em três variáveis e exiba os resultados no
+formato:
+Menor = ...
+Maior = ...
+Média = ...
