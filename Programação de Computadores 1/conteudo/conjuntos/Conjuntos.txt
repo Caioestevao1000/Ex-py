@@ -1,0 +1,103 @@
+Conjuntos
+
+Lista de Exercícios I
+
+Use conjuntos (set) como estrutura principal.
+
+1) Leia uma linha com inteiros separados por espaço, considere apenas os
+valores distintos e exiba quantos valores diferentes foram informados.
+Entrada (exemplo):
+Números: 5 2 2 3 5 7 7 7
+Saída (exemplo):
+Quantidade de distintos: 4
+
+2) Leia duas linhas com nomes (uma por turma) e mostre o conjunto contendo
+todos os nomes que aparecem em pelo menos uma das linhas e, na linha
+seguinte, a quantidade total de nomes distintos.
+Entrada (exemplo):
+Nomes Turma A: Ana João Maria
+Nomes Turma B: João Pedro
+Saída (exemplo):
+União: {Ana, João, Maria, Pedro}
+Total: 4
+
+3) Leia duas linhas com palavras-chave e exiba o conjunto com as palavras que
+aparecem em ambas as linhas (se não houver, mostre o conjunto vazio).
+Entrada (exemplo):
+Linha 1: dados ciência python limpeza
+Linha 2: estatística python dados regressão
+Saída (exemplo):
+Comuns: {python, dados}
+
+4) Leia duas linhas: a primeira com os códigos cadastrados e a segunda com os
+códigos presentes; exiba o conjunto com os cadastrados que não aparecem
+na lista de presentes.
+Entrada (exemplo):
+Cadastrados: A1 A2 A3 A4
+Presentes: A2 A4
+Saída (exemplo):
+Faltantes: {A1, A3}
+
+5) Leia duas linhas: a primeira contém os nomes presentes no momento “antes”
+e a segunda contém os nomes presentes no momento “depois”. Exiba o
+conjunto das pessoas que aparecem em exatamente uma das duas linhas —
+isto é, quem saiu (estava antes e não está depois) ou entrou (não estava
+antes e está depois). Ignore duplicatas em cada linha; a ordem do conjunto
+exibido é arbitrária.
+Entrada (exemplo):
+Antes: Ana João Maria
+Depois: Ana Pedro Maria Luísa
+Saída (exemplo):
+Mudanças: {João, Pedro, Luísa}
+
+6) Leia uma linha com e-mails autorizados e, na linha seguinte, um e-mail de
+usuário; exiba “Acesso liberado” se o e-mail informado estiver na lista de
+autorizados, ou “Acesso negado” caso contrário.
+Entrada (exemplo):
+Autorizados: ana@ex.com joao@ex.com maria@ex.com
+Usuário: joao@ex.com
+Saída (exemplo):
+Acesso liberado
+
+7) Leia uma linha com e-mails separados por espaço, desconsidere diferenças
+entre maiúsculas e minúsculas, extraia a parte após “@” e mostre o conjunto
+de domínios distintos e, na linha seguinte, a quantidade total de domínios.
+Entrada (exemplo):
+Ana@Ex.com JOAO@ex.com maria@uni.br pedro@uni.br
+Saída (exemplo):
+Domínios: {ex.com, uni.br}
+Total: 2
+
+8) Leia uma linha com itens (strings), forme um conjunto e imprima um item por
+linha, removendo um elemento do conjunto a cada impressão até esvaziá-lo;
+ao final, imprima “Vazio”. A ordem de impressão pode variar.
+Entrada (exemplo):
+maçã banana pera
+Saída (exemplo):
+banana
+maçã
+pera
+Vazio
+(a ordem pode variar)
+
+9) Leia três linhas com códigos de quem entregou cada uma das três listas;
+exiba o conjunto de quem aparece em pelo menos uma das linhas e, em
+outra linha, o conjunto de quem aparece nas três linhas.
+Entrada (exemplo):
+lista1: A1 A2 A3
+lista2: A2 A4
+lista3: A2 A3 A5
+Saída (exemplo):
+Pelo menos uma: {A1, A2, A3, A4, A5}
+Todas: {A2}
+
+10) Leia uma linha com os itens disponíveis no estoque e outra com os itens
+pedidos (podem conter repetidos); mostre o conjunto de itens que podem ser
+atendidos (presentes nas duas linhas) e, em seguida, o conjunto de itens
+pedidos que não estão disponíveis.
+Entrada (exemplo):
+Estoque: teclado mouse monitor
+Pedidos: mouse mouse teclado webcam
+Saída (exemplo):
+Atendidos: {mouse, teclado}
+Indisponíveis: {webcam}
