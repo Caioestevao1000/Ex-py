@@ -1,0 +1,182 @@
+Estruturas Compostas
+
+Lista de Exercícios II
+
+Combinação de Listas, Tuplas, Dicionários e Conjuntos.
+
+1) Leia os dados de n alunos (nome e curso). Armazene em uma lista de
+dicionários e mostre:
+
+• todos os alunos cadastrados;
+• o conjunto de cursos sem repetição;
+• a quantidade de alunos em cada curso.
+Quantos alunos? 5
+Nome do aluno 1: Ana
+Curso do aluno 1: Engenharia
+Nome do aluno 2: Bruno
+Curso do aluno 2: Computação
+Nome do aluno 3: Carla
+Curso do aluno 3: Engenharia
+Nome do aluno 4: Daniel
+Curso do aluno 4: Química
+Nome do aluno 5: Érica
+Curso do aluno 5: Computação
+Alunos cadastrados:
+- Ana (Engenharia)
+- Bruno (Computação)
+- Carla (Engenharia)
+- Daniel (Química)
+- Érica (Computação)
+Cursos (sem repetição):
+- Química
+- Engenharia
+- Computação
+Quantidade de alunos por curso:
+- Engenharia: 2
+- Computação: 2
+- Química: 1
+
+
+2) Leia os dados de n funcionários (nome, cargo, salário). Mostre:
+
+• total gasto com salários;
+• salário médio, maior e menor;
+• cargos sem repetição;
+• o funcionário com maior salário.
+Quantos funcionários? 4
+Funcionário 1 - Nome: Ana
+Funcionário 1 - Cargo: Gerente
+Funcionário 1 - Salário: 5000
+Funcionário 2 - Nome: Bruno
+Funcionário 2 - Cargo: Analista
+Funcionário 2 - Salário: 3500
+Funcionário 3 - Nome: Carla
+Funcionário 3 - Cargo: Estagiária
+Funcionário 3 - Salário: 1200
+Funcionário 4 - Nome: Daniel
+Funcionário 4 - Cargo: Analista
+Funcionário 4 - Salário: 3700
+Total de salários: R$ 13400.00
+Salário médio: R$ 3350.00
+Maior salário: R$ 5000.00 (Ana)
+Menor salário: R$ 1200.00 (Carla)
+Cargos (sem repetição):
+- Gerente
+- Estagiária
+- Analista
+
+
+3) Cadastre vendas com cliente, produto, valor. Mostre:
+• valor total vendido;
+• clientes sem repetição;
+• total comprado por cliente;
+• cliente que mais comprou.
+Quantas vendas? 5
+Venda 1 - Cliente: Ana
+Venda 1 - Produto: Arroz
+Venda 1 - Valor: 50
+Venda 2 - Cliente: Bruno
+Venda 2 - Produto: Feijão
+Venda 2 - Valor: 80
+Venda 3 - Cliente: Ana
+Venda 3 - Produto: Café
+Venda 3 - Valor: 25
+Venda 4 - Cliente: Carla
+Venda 4 - Produto: Leite
+Venda 4 - Valor: 30
+Venda 5 - Cliente: Bruno
+Venda 5 - Produto: Feijão
+Venda 5 - Valor: 80
+Valor total vendido: R$ 265.00
+Clientes (sem repetição):
+- Ana
+- Bruno
+- Carla
+Total por cliente:
+- Ana: R$ 75.00
+- Bruno: R$ 160.00
+- Carla: R$ 30.00
+Cliente que mais comprou: Bruno (R$ 160.00)
+
+
+4) Cadastre n livros (título e autor). Mostre:
+
+• os autores sem repetição;
+• os livros agrupados por autor (no formato autor: títulos);
+• os títulos de um autor específico informado pelo usuário;
+• o autor com mais livros cadastrados.
+Quantos livros? 5
+Livro 1 - Título: Dom Casmurro
+Livro 1 - Autor: Machado de Assis
+Livro 2 - Título: Memórias Póstumas
+Livro 2 - Autor: Machado de Assis
+Livro 3 - Título: Vidas Secas
+Livro 3 - Autor: Graciliano Ramos
+Livro 4 - Título: O Cortiço
+Livro 4 - Autor: Aluísio Azevedo
+Livro 5 - Título: Iracema
+Livro 5 - Autor: José de Alencar
+Autores (sem repetição):
+- Machado de Assis
+- Graciliano Ramos
+- Aluísio Azevedo
+- José de Alencar
+Livros por autor:
+- Machado de Assis: Dom Casmurro, Memórias Póstumas
+- Graciliano Ramos: Vidas Secas
+- Aluísio Azevedo: O Cortiço
+- José de Alencar: Iracema
+Digite um autor para listar títulos: Machado de Assis
+Livros de Machado de Assis:
+- Dom Casmurro
+- Memórias Póstumas
+Autor com mais livros cadastrados: Machado de Assis (2)
+
+
+5) Cadastre n contatos (nome e telefone). O programa deve:
+
+• mostrar todos os nomes cadastrados;
+• mostrar os nomes sem repetições;
+• permitir que o usuário digite um nome para exibir o telefone
+correspondente;
+• permitir alterar o telefone de um contato existente;
+• permitir remover um contato.
+Quantos contatos? 6
+Contato 1 - Nome: Ana
+Contato 1 - Telefone: 1111-1111
+Contato 2 - Nome: Bruno
+Contato 2 - Telefone: 2222-2222
+Contato 3 - Nome: Carla
+Contato 3 - Telefone: 3333-3333
+Contato 4 - Nome: Daniel
+Contato 4 - Telefone: 4444-4444
+Contato 5 - Nome: Ana
+Contato 5 - Telefone: 5555-5555
+Contato 6 - Nome: Érica
+Contato 6 - Telefone: 6666-6666
+Nomes cadastrados:
+- Ana
+- Bruno
+- Carla
+- Daniel
+- Ana
+- Érica
+Nomes (sem repetição):
+- Ana
+- Bruno
+- Carla
+- Daniel
+- Érica
+Digite um nome para buscar o telefone: Carla
+Telefone de Carla: 3333-3333
+Digite um nome para alterar o telefone (ou deixe vazio para pular): Ana
+Novo telefone: 7777-7777
+Telefone alterado.
+Digite um nome para remover (ou deixe vazio para pular): Daniel
+Contato removido.
+Lista final de contatos:
+- Ana: 7777-7777
+- Bruno: 2222-2222
+- Carla: 3333-3333
+- Ana: 5555-5555
+- Érica: 6666-6666
