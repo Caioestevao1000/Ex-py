@@ -1,0 +1,135 @@
+Estruturas Compostas
+Lista de Exercícios III
+Combinação de Listas, Tuplas, Dicionários e Conjuntos.
+
+1) Leia dois conjuntos de inteiros e mostre:
+• união, interseção, diferença (A−B e B−A) e diferença simétrica.
+Digite os números do conjunto A (separados por espaço): 1 2 3 5 8
+Digite os números do conjunto B (separados por espaço): 2 3 4 9
+União: [1, 2, 3, 4, 5, 8, 9]
+Interseção: [2, 3]
+Diferença A - B: [1, 5, 8]
+Diferença B - A: [4, 9]
+Diferença simétrica: [1, 4, 5, 8, 9]
+
+2) Cadastre distâncias entre pares de cidades e permita consulta na ordem
+direta ou inversa. Se não houver registro, mostre “distância não
+encontrada”.
+Quantos registros de distância? 3
+Registro 1 - Cidade 1: Londrina
+Registro 1 - Cidade 2: Curitiba
+Registro 1 - Distância (km): 380
+Registro 2 - Cidade 1: Curitiba
+Registro 2 - Cidade 2: São Paulo
+Registro 2 - Distância (km): 408
+Registro 3 - Cidade 1: Londrina
+Registro 3 - Cidade 2: Maringá
+Registro 3 - Distância (km): 100
+Consulta de distância
+Digite a primeira cidade: Curitiba
+Digite a segunda cidade: Londrina
+Distância entre Curitiba e Londrina: 380.0 km
+
+3) Leia as disciplinas de dois alunos (nome → lista de disciplinas). Mostre:
+• disciplinas em comum;
+• disciplinas exclusivas de cada um;
+• quantidades de comum e exclusivas.
+Nome do aluno 1: Ana
+Quantas disciplinas Ana cursa? 3
+Digite a disciplina 1 de Ana: Matemática
+Digite a disciplina 2 de Ana: Física
+Digite a disciplina 3 de Ana: Química
+Nome do aluno 2: Bruno
+Quantas disciplinas Bruno cursa? 3
+Digite a disciplina 1 de Bruno: Biologia
+Digite a disciplina 2 de Bruno: Física
+Digite a disciplina 3 de Bruno: Química
+Disciplinas em comum:
+- Física
+- Química
+Somente Ana:
+- Matemática
+Somente Bruno:
+- Biologia
+Quantidades:
+- Em comum: 2
+- Exclusivas de Ana: 1
+- Exclusivas de Bruno: 1
+
+4) Cadastre produtos com nome, preço e quantidade. Permita compras
+(produto, quantidade), atualize o estoque e mostre o valor total; avise se
+faltar estoque.
+Quantos produtos no cadastro? 4
+Produto 1 - Nome: Arroz
+Produto 1 - Preço: 5.20
+Produto 1 - Quantidade em estoque: 10
+Produto 2 - Nome: Feijão
+Produto 2 - Preço: 8.50
+Produto 2 - Quantidade em estoque: 8
+Produto 3 - Nome: Leite
+Produto 3 - Preço: 4.75
+Produto 3 - Quantidade em estoque: 12
+Produto 4 - Nome: Café
+Produto 4 - Preço: 9.90
+Produto 4 - Quantidade em estoque: 5
+Quantos itens serão comprados? 5
+Compra 1 - Produto: Arroz
+Compra 1 - Quantidade: 2
+Item registrado.
+Compra 2 - Produto: Leite
+Compra 2 - Quantidade: 3
+Item registrado.
+Compra 3 - Produto: Chocolate
+Compra 3 - Quantidade: 1
+Produto não existe.
+Compra 4 - Produto: Café
+Compra 4 - Quantidade: 6
+Quantidade insuficiente em estoque.
+Compra 5 - Produto: Feijão
+Compra 5 - Quantidade: 2
+Item registrado.
+Valor total da compra: R$ 33.95
+Estoque atualizado:
+- Arroz: 8 un | R$ 5.20
+- Feijão: 6 un | R$ 8.50
+- Leite: 9 un | R$ 4.75
+- Café: 5 un | R$ 9.90
+
+5) Cadastre n compromissos (data, hora, descrição). O programa deve:
+a) listar todos;
+b) buscar por data;
+c) mostrar datas sem repetição;
+d) excluir por descrição.
+Quantos compromissos deseja cadastrar? 4
+Compromisso 1 - Data (AAAA-MM-DD): 2025-09-20
+Compromisso 1 - Hora (HH:MM): 09:00
+Compromisso 1 - Descrição: Reunião do projeto
+Compromisso 2 - Data (AAAA-MM-DD): 2025-09-20
+Compromisso 2 - Hora (HH:MM): 14:00
+Compromisso 2 - Descrição: Aula de Python
+Compromisso 3 - Data (AAAA-MM-DD): 2025-09-22
+Compromisso 3 - Hora (HH:MM): 10:30
+Compromisso 3 - Descrição: Banca TCC
+Compromisso 4 - Data (AAAA-MM-DD): 2025-09-23
+Compromisso 4 - Hora (HH:MM): 15:00
+Compromisso 4 - Descrição: Feira de Profissões
+Todos os compromissos:
+- 2025-09-20 09:00 | Reunião do projeto
+- 2025-09-20 14:00 | Aula de Python
+- 2025-09-22 10:30 | Banca TCC
+- 2025-09-23 15:00 | Feira de Profissões
+Buscar por data (AAAA-MM-DD): 2025-09-20
+Compromissos em 2025-09-20:
+- 09:00 | Reunião do projeto
+- 14:00 | Aula de Python
+Datas (sem repetição):
+- 2025-09-20
+- 2025-09-22
+- 2025-09-23
+Excluir compromisso pela descrição (ou deixe vazio para pular): Aula de
+Python
+Compromisso removido.
+Agenda final:
+- 2025-09-20 09:00 | Reunião do projeto
+- 2025-09-22 10:30 | Banca TCC
+- 2025-09-23 15:00 | Feira de Profissões

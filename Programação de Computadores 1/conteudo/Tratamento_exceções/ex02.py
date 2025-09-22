@@ -2,10 +2,8 @@ try:
     list = ["arroz", "feijão", "macarrão", "óleo"]
     indice = int(input("Digite o índice do item:"))
 
-    print("Item selecionado;", list[indice])
+    print("Item selecionado:", list[indice])
 except ValueError:
-    print("Erro: Não pode ser vazio")
-except TypeError:
-    print("Tipo errado de entrada deve ser um número") #não está funcionando
+    print("Erro: você digitou um valor que não é número inteiro")
 except IndexError:
     print("índice da Lista não existe")
