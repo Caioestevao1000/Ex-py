@@ -3,5 +3,5 @@ def contagem(n):
       return 1
    else:
     return 1 + contagem(n // 10)
-
-print(contagem(1234))
+n = int(input())
+print(contagem(n))
