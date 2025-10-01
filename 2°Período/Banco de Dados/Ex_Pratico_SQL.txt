@@ -1,0 +1,233 @@
+Exercício Prático - Programiz
+
+https://www.programiz.com/sql/online-compiler
+
+## 1.Liste todos os nomes e sobrenomes dos clientes. ##
+SELECT first_name, last_name
+FROM Customers;
+
+## 2.Liste todos os clientes que moram no USA. ##
+SELECT *
+FROM Customers
+WHERE country = 'USA';
+
+## 3.Liste os clientes ordenados pela idade, do mais velho para o mais novo. ##
+SELECT *
+FROM Customers
+ORDER BY age DESC;
+
+## 4.Liste os clientes cujo primeiro nome começa com a letra ‘A’. ##
+SELECT *
+FROM Customers
+WHERE first_name LIKE 'A%';
+
+## 5.Liste os clientes que moram no USA, UK, UAE. ##
+SELECT *
+FROM Customers
+WHERE country IN ('USA', 'UK', 'UAE');
+
+## 6.Conte quantos clientes existem na tabela. ##
+SELECT COUNT(*) AS total_clientes
+FROM Customers;
+
+## 7.Calcule a média de idade dos clientes que moram no UK. ##
+SELECT AVG(age) AS media_idade
+FROM Customers
+WHERE country = 'UK';
+
+## 8.Liste quantos clientes existem por país. ##
+SELECT country, COUNT(*) AS total
+FROM Customers
+GROUP BY country;
+
+## 9.Liste os países que possuem mais de 5 clientes. ##
+SELECT country, COUNT(*) AS total
+FROM Customers
+GROUP BY country
+HAVING COUNT(*) > 5;
+
+## 10 Liste os nomes dos clientes junto com os itens que eles compraram. ##
+SELECT c.first_name, c.last_name, o.item
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id;
+
+## 11 Liste os clientes que compraram produtos acima de 500. ##
+SELECT DISTINCT c.first_name, c.last_name
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+WHERE o.amount > 500;
+
+## 12 Liste todos os clientes e, se existirem, seus pedidos. ##
+SELECT c.first_name, c.last_name, o.item, o.amount
+FROM Customers c
+LEFT JOIN Orders o ON c.customer_id = o.customer_id;
+
+## 13 Liste todos os pedidos e, se existirem, os clientes correspondentes. ##
+SELECT o.item, o.amount, c.first_name, c.last_name
+FROM Orders o
+LEFT JOIN Customers c ON o.customer_id = c.customer_id;
+
+## 14 Liste o nome dos clientes e o status de seus envios. ##
+SELECT c.first_name, c.last_name, s.status
+FROM Customers c
+LEFT JOIN Shippings s ON c.customer_id = s.customer;
+
+## 15 Calcule o valor total de pedidos de cada cliente. ##
+SELECT c.first_name, c.last_name, SUM(o.amount) AS total_pedidos
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name;
+
+## 16 Liste os clientes que já gastaram mais de 2000 em pedidos. ##
+SELECT c.first_name, c.last_name, SUM(o.amount) AS total_pedidos
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+HAVING SUM(o.amount) > 2000;
+
+## 17 Liste os clientes que já fizeram algum pedido com valor acima da média de todos os pedidos. ##
+SELECT DISTINCT c.first_name, c.last_name
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+WHERE o.amount > (SELECT AVG(amount) FROM Orders);
+
+## 18 Liste os clientes que possuem pedidos cadastrados. ##
+SELECT DISTINCT c.first_name, c.last_name
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id;
+
+## 19 Liste os clientes cujo valor total de pedidos é maior que 1000. ##
+SELECT c.first_name, c.last_name, SUM(o.amount) AS total_pedidos
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+HAVING SUM(o.amount) > 1000;
+
+## 20 Liste o país com o maior número de clientes. ##
+SELECT country, COUNT(*) AS total
+FROM Customers
+GROUP BY country
+ORDER BY total DESC
+LIMIT 1;
+
+## 21 Liste os clientes com idade entre 25 e 35 anos. ##
+SELECT *
+FROM Customers
+WHERE age BETWEEN 25 AND 35;
+
+## 22 Liste os 5 clientes mais jovens. ##
+SELECT *
+FROM Customers
+ORDER BY age ASC
+LIMIT 5;
+
+## 23 Liste os pedidos cujo valor (amount) seja múltiplo de 100. ##
+SELECT *
+FROM Orders
+WHERE amount % 100 = 0;
+
+## 24 Liste todos os países distintos em que os clientes moram. ##
+SELECT DISTINCT country
+FROM Customers;
+
+## 25 Liste a soma total de todos os pedidos cadastrados. ##
+SELECT SUM(amount) AS total_pedidos
+FROM Orders;
+
+## 26 Liste a quantidade de pedidos feitos por cada cliente. ##
+SELECT c.first_name, c.last_name, COUNT(o.order_id) AS total_pedidos
+FROM Customers c
+LEFT JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name;
+
+## 27 Liste os clientes que ainda não possuem pedidos. ##
+SELECT c.first_name, c.last_name
+FROM Customers c
+LEFT JOIN Orders o ON c.customer_id = o.customer_id
+WHERE o.order_id IS NULL;
+
+## 28 Liste os clientes que ainda não possuem envios na tabela Shippings. ##
+SELECT c.first_name, c.last_name
+FROM Customers c
+LEFT JOIN Shippings s ON c.customer_id = s.customer
+WHERE s.shipping_id IS NULL;
+
+## 29 Liste os clientes que possuem mais de 3 pedidos. ##
+SELECT c.first_name, c.last_name, COUNT(o.order_id) AS total_pedidos
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+HAVING COUNT(o.order_id) > 3;
+
+## 30 Liste os pedidos com valores acima do pedido mais barato registrado. ##
+SELECT *
+FROM Orders
+WHERE amount > (SELECT MIN(amount) FROM Orders);
+
+## 31 Liste os pedidos feitos por clientes que moram no mesmo país do cliente “John”. ##
+SELECT o.*
+FROM Orders o
+JOIN Customers c ON o.customer_id = c.customer_id
+WHERE c.country = (
+    SELECT country FROM Customers WHERE first_name = 'John' LIMIT 1
+);
+
+## 32 Liste o cliente que realizou o pedido de maior valor. ##
+SELECT c.first_name, c.last_name, o.amount
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+ORDER BY o.amount DESC
+LIMIT 1;
+
+## 33 Liste os clientes que possuem pedidos, mas ainda não têm status de envio cadastrado. ##
+SELECT DISTINCT c.first_name, c.last_name
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+LEFT JOIN Shippings s ON c.customer_id = s.customer
+WHERE s.shipping_id IS NULL;
+
+## 34 Liste os pedidos e adicione uma coluna com 10% de desconto calculado no valor. ##
+SELECT order_id, item, amount, amount * 0.9 AS valor_com_desconto
+FROM Orders;
+
+## 35 Liste os clientes cujo sobrenome termina com a letra “e”. ##
+SELECT *
+FROM Customers
+WHERE last_name LIKE '%e';
+
+## 36 Liste os 3 países com maior número de clientes. ##
+SELECT country, COUNT(*) AS total
+FROM Customers
+GROUP BY country
+ORDER BY total DESC
+LIMIT 3;
+
+## 37 Liste o valor médio dos pedidos agrupados por país do cliente. ##
+SELECT c.country, AVG(o.amount) AS media_pedidos
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.country;
+
+## 38 Liste os clientes que compraram mais de um tipo de item diferente. ##
+SELECT c.first_name, c.last_name, COUNT(DISTINCT o.item) AS itens_diferentes
+FROM Customers c
+JOIN Orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+HAVING COUNT(DISTINCT o.item) > 1;
+
+## 39 Liste o cliente mais velho de cada país. ##
+SELECT country, first_name, last_name, age
+FROM Customers c1
+WHERE age = (
+    SELECT MAX(age) FROM Customers c2 WHERE c2.country = c1.country
+);
+
+## 40 Liste os clientes que possuem o mesmo sobrenome que algum outro cliente. ##
+SELECT first_name, last_name
+FROM Customers
+WHERE last_name IN (
+    SELECT last_name
+    FROM Customers
+    GROUP BY last_name
+    HAVING COUNT(*) > 1
+);
