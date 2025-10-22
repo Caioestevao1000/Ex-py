@@ -1,9 +1,9 @@
 class Pilha: 
-  def __init__(self): #o qu eé esse self?
+  def __init__(self): #o que é esse self?
     self.elementos = []
 
   def push(self, item):
-    self._elementos.append(item)
+    self.elementos.append(item)
 
   def pop(self):
     if self.isEmpty():
